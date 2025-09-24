@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+}
+
+:root {
+    --bg-color: #000;
+    --text-gray: rgba(255,255,255, 0.7);
+    --text-color-white: #FFFFFF;
+    --btn-color-blue: #0070F3;
+    --btn-color-gray: #1E1E1E;
+}
+
+body {
+    background-color: var(--bg-color);
+    background-image: url('./img/elipse.svg');
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 860px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+
+    & .principal {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        color: var(--text-color-white);
+
+        & .content {
+
+            & h1 {
+                font-size: 80px;
+                margin-bottom: 30px;
+                font-weight: 500;
+            }
+
+            & p {
+                color: var(--text-gray);
+                font-size: 40px;
+            }
+        }
+
+        & .btns {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+
+            & a {
+                font-size: 24px;
+                color: var(--text-color-white);
+                font-weight: bold;
+                padding: 10px 55px;
+                border-radius: 10px;
+                background-color: var(--btn-color-gray);
+            }
+
+            & a:first-child {
+                background-color: var(--btn-color-blue);
+            }
+        }
+    }
+}
